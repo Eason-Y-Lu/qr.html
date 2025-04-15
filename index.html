@@ -142,7 +142,7 @@
 
         <div id="monitor-clipboard" class="button"></div>
         <a id="download" href="" download>Download</a>
-        <a href="https://github.com/six-two/qr.html" target="_blank" rel="noopener noreferrer">Source code</a>
+        <a href="https://github.com/Eason-Y-Lu/qr.html" target="_blank" rel="noopener noreferrer">Source code</a>
     </header>
     <div id="text-and-qr">
         <div id="input-div">
@@ -202,7 +202,7 @@
 
     const showQrCodeGenerationError = (message) => {
         // Bad practice, but XSS should not be possible
-        qrcode.innerHTML = `<div class="error"><b>QR code generation failed:</b><br>${message}</div>`;
+        qrcode.innerHTML = `<div class="error"><b>Click on the QR Code to save as a png.<br><br>QR code generation failed:</b><br>${message}</div>`;
     }
 
     const updateQRCode = () => {
